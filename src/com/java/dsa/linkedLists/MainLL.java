@@ -11,6 +11,7 @@ public class MainLL {
 		list.insertFirst(8);
 		list.insertFirst(10);
 		list.insertFirst(12); // will be inserted at the first index
+		list.insertLast(112); // will be inserted in the last
 		
 		list.displayLL(); // Out : 12 -> 10 -> 8 -> 5 -> 3 
 		
