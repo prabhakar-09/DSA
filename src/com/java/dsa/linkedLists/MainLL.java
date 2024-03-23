@@ -12,7 +12,7 @@ public class MainLL {
 		list.insertFirst(10);
 		list.insertFirst(12); // will be inserted at the first index
 		list.insertLast(112); // will be inserted in the last
-		
+		list.insert(100, 4); // out 12 -> 10 -> 8 -> 5 -> 100 -> 3 -> 112 -> End 
 		list.displayLL(); // Out : 12 -> 10 -> 8 -> 5 -> 3 
 		
 	}
