@@ -34,6 +34,17 @@ public class LinkedLists {
 		System.out.print(head.data + " ");
 	}
 	
+	public static void lengthOfLL(Node a) {
+		int count = 0;
+		
+		while(a != null) {
+			count++;
+			a = a.next;
+		}
+		
+		System.out.println("Length of LL " + count);
+	}
+	
 	public static void main(String[] args) {
 		
 		Node a = new Node(1); // head node
@@ -79,6 +90,11 @@ public class LinkedLists {
 		
 //		Displaying LL in reverse
 		displayLLReverse(a);
+		
+		System.out.println();
+		
+//		Displaying length of a LL
+		lengthOfLL(a); // passing head node to the linkedList
 	}
 	
 	
