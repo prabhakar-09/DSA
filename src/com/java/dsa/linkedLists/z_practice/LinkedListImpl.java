@@ -49,11 +49,26 @@ public class LinkedListImpl {
 		}
 	}
 	
+	public void insertAtIndex(int index, int data) {
+		 
+		Node newNode = new Node(data);
+		Node temp = head;
+		
+		for(int i=0;i<index-1;i++) {
+			
+			temp = temp.next;
+		}
+		
+		newNode.next = temp.next;
+		temp.next = newNode;
+	}
+	
 	public static void displayLL() {
 		
 		Node temp = head;
 		
 		while(temp != null) {
+			
 			System.out.print(temp.data + " -> ");
 			temp = temp.next;
 		}
@@ -82,7 +97,7 @@ public class LinkedListImpl {
 		ll.addLast(4);
 		ll.addLast(5);
 		ll.addLast(6);
-		
+		ll.insertAtIndex(3, 10);
 		ll.displayLL(); 
 		
 		ll.addFirst(0); // will add 0 at first
