@@ -1,6 +1,5 @@
 package com.java.dsa.optimized;
 
-import com.java.dsa.linkedLists.easy.nthNodeFromEnd.Node;
 
 public class NthNodeFromEndOptimized {
 	
