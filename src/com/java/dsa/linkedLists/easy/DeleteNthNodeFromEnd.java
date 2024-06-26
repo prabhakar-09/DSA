@@ -27,7 +27,7 @@ public class DeleteNthNodeFromEnd {
 //		If we need to delete first node(head node itself) from the end that means the given number to delete from end 
 //		would be the size of linked list.. In such cases check for the below condition & handle accordingly.
 		
-		if(fast == null) {
+		if(fast == null) { // means user wants to delete first node 
 			
 			head = head.next;
 			return head;
